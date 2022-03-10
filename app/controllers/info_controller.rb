@@ -1,7 +1,8 @@
 class InfoController < ApplicationController
 
 def supplies_method
-  material_choice = params["material"]
-render json: {message: "The material you requested is #{material_choice}. "}
+  material_one = params["material1"]
+  material_two = params["material2"]
+render json: {message: "The materials you requested are #{material_one} and #{material_two}. "}
 end
 end
